@@ -1,30 +1,40 @@
-#Tailwind
-npm install tailwindcss postcss autoprefixer -D
-npx tailwindcss init  -p (-p post css)
+<h1>Projeto...</h1>
 
-  content: [
-    './src/**/*.tsx'
-  ],
+<h1>
+  <img src="#">
+</h1>
 
-remover arquivos css
+<h3 align="center">
+  <a href="#" target="_blank">Acessar a demonstração</a>
+</h3>
 
-extensões:
-graphql
-tailwind
-postcss
+## 🎫 Sobre
 
+Projeto desenvolvido durate o Ignite Lab | React Js.
 
 ---
-#CMS 
-install graphcms
-clonar projeto
-​http://rseat.in/lab-graphcms
 
-pupular bd
+## 🚀 Tecnologias utilizadas
+
+- [React Js](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [Graphcms](https://graphcms.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [date-fns](https://date-fns.org/)
+- [Apollo](https://www.apollographql.com/)
 
 ---
-consumir graphcms pelo frontend
-usando apollo 
 
-install apollo/client
+## 🔗 Links úteis
 
+- [Rocketseat](https://www.rocketseat.com.br/)
+- [Github](https://github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [w3schools](https://www.w3schools.com/)
+- [MDN](https://developer.mozilla.org/)
+
+---
+
+Desenvolvido por [LadeiaDev](https://ladeia.dev.br/)
