@@ -18,12 +18,13 @@ Projeto desenvolvido durate o Ignite Lab | React Js.
 
 - [React Js](https://reactjs.org/)
 - [React Router](https://reactrouter.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Phosphor Icons](https://phosphoricons.com/)
-- [Graphcms](https://graphcms.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Graphcms](https://graphcms.com/)
+- [Phosphor Icons](https://phosphoricons.com/)
 - [date-fns](https://date-fns.org/)
 - [Apollo](https://www.apollographql.com/)
+- [Vime js](https://vimejs.com/)
 
 ---
 
