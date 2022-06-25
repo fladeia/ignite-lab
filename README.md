@@ -1,11 +1,11 @@
 <h1>Ignite Lab | Plataforma de vídeo</h1>
 
 <h1>
-  <img src="#">
+  <img src="https://ik.imagekit.io/ladeiaDev/2022-06-25-11-57-ignite-lab-smoky.vercel.app_qLsQEGw4h.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656169112355">
 </h1>
 
 <h3 align="center">
-  <a href="https://ik.imagekit.io/ladeiaDev/2022-06-25-11-57-ignite-lab-smoky.vercel.app_qLsQEGw4h.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656169112355" target="_blank">Acessar a demonstração</a>
+  <a href="ignite-813j6m4gc-fladeia.vercel.app" target="_blank">Acessar a demonstração</a>
 </h3>
 
 ## 🎫 Sobre
