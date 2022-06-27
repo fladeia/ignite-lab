@@ -65,7 +65,7 @@ export const Subscribe = () => {
         </div>
       </div>
 
-      <img src="/src/assets/image-background.png" alt="imagem de fundo" />
+      <img src="https://ik.imagekit.io/ladeiaDev/image-background_z6AtRkcv1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656371634957" alt="imagem de fundo" />
     </div>
   )
 }
