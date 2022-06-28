@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react"
 import { useNavigate } from "react-router-dom"
+import { Footer } from "../components/Footer"
 import { Logo } from "../components/Logo"
 import { useCreateSubscriberMutation } from "../graphql/generated"
 
@@ -25,18 +26,18 @@ export const Subscribe = () => {
 
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex flex-col items-center justify-between mt-20 mx-auto lg:px-2 lg:flex-row">
-        <div className="max-w-[640px] pr-2 text-center lg:text-left">
+      <div className="w-full max-w-[1100px] flex flex-col items-center justify-between mx-auto mt-10 lg:mt-20 lg:px-2 lg:flex-row">
+        <div className="max-w-[640px] text-center px-6 lg:px-0 lg:text-left">
           <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-relaxed">
+          <h1 className="mt-6 text-3xl leading-relaxed lg:text-[2.5rem] lg:mt-8">
             Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com  <strong className="text-blue-500">React</strong>
           </h1>
-          <p className="my-12 text-gray-200 leading-relaxed lg:mt-4 lg:mb-0">
+          <p className="my-6 text-gray-200 leading-relaxed text-sm lg:text-base lg:mt-4 lg:mb-0">
             Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
           </p>
         </div>
         <div className="w-full bg-gray-700 border border-gray-500 p-8 lg:rounded lg:w-auto">
-          <strong className="text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
+          <strong className="text-lg mb-6 block lg:text-2xl">Inscreva-se gratuitamente</strong>
 
           <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
             <input
@@ -63,7 +64,9 @@ export const Subscribe = () => {
         </div>
       </div>
 
-      <img src="https://ik.imagekit.io/ladeiaDev/image-background_z6AtRkcv1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656371634957" alt="imagem de fundo" className="px-2" />
+      <img src="https://ik.imagekit.io/ladeiaDev/image-background_z6AtRkcv1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656371634957" alt="imagem de fundo" className="py-6 lg:px-2" />
+
+      <Footer />
     </div>
   )
 }
