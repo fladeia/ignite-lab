@@ -12,12 +12,14 @@ export const Event = () => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
-      <main className='flex flex-1 relative'>
-        {slug ? <Video lessonSlug={slug} /> : <div className='flex-1'></div>}
+      <div className='flex flex-1 relative'>
+        <main className='flex flex-col flex-1'>
+          {slug ? <Video lessonSlug={slug} /> : <div className='flex-1'></div>}
 
+          <Footer />
+        </main>
         <Sidebar setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
-      </main>
-      <Footer />
+      </div>
     </div>
   )
 }

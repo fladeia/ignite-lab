@@ -25,9 +25,9 @@ export const Subscribe = () => {
   }
 
   return (
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col">
       <div className="w-full max-w-[1100px] flex flex-col items-center justify-between mx-auto mt-10 lg:mt-20 lg:px-2 lg:flex-row">
-        <div className="max-w-[640px] text-center px-6 lg:px-0 lg:text-left">
+        <div className="max-w-[640px] flex flex-col items-center text-center px-6 lg:px-0 lg:text-left lg:items-start">
           <Logo />
           <h1 className="mt-6 text-3xl leading-relaxed lg:text-[2.5rem] lg:mt-8">
             Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com  <strong className="text-blue-500">React</strong>
