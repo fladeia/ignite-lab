@@ -8,5 +8,10 @@ body {
 }
 
 .logo {
-  @apply mr-auto h-6 lg:mx-auto lg:h-8
+  @apply  h-6  lg:h-8
+  /* @apply mr-auto h-6 lg:mx-auto lg:h-8 */
+}
+
+.hamburger {
+  @apply mr-4 
 }

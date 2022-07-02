@@ -9,6 +9,8 @@ interface LessonProps {
   slug: string;
   availableAt: Date;
   type: 'live' | 'class';
+  showSidebar: string;
+  setShowSidebar: (string: string) => void
 }
 
 export const Lessons = (props: LessonProps) => {
@@ -18,10 +20,18 @@ export const Lessons = (props: LessonProps) => {
     locale: ptBR
   })
 
+  const handleClick = () => {
+    if (props.showSidebar === 'hidden') {
+      props.setShowSidebar('')
+    } else {
+      props.setShowSidebar('hidden')
+    }
+  }
+
   const isActiveLesson = slug === props.slug
 
-  return (
-    <Link to={`/event/lesson/${props.slug}`} className='group'>
+  return ( //FIX: redirect video 2 to video 1 bugged
+    <Link to={`/event/lesson/${props.slug}`} className='group' onClick={handleClick} >
       <span className="text-gray-300">
         {availableDateFromatted}
       </span>
