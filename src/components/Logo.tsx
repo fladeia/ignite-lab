@@ -1,8 +1,9 @@
-interface PropsTest {
-  className: string;
-}
+// interface PropsTest {
+//   className: string;
+// }
 
-export const Logo = ({ className }: PropsTest) => {
+// export const Logo = ({ className }: PropsTest) => {
+export const Logo = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +11,7 @@ export const Logo = ({ className }: PropsTest) => {
       height="34"
       fill="none"
       viewBox="0 0 237 34"
-      className={className}
+      className="logo"
     >
       <path
         fill="#fff"
