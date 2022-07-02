@@ -1,4 +1,8 @@
-export const Logo = () => {
+interface PropsTest {
+  className: string;
+}
+
+export const Logo = ({ className }: PropsTest) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +10,7 @@ export const Logo = () => {
       height="34"
       fill="none"
       viewBox="0 0 237 34"
-      className="mx-auto lg:mx-0"
+      className={className}
     >
       <path
         fill="#fff"

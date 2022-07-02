@@ -7,6 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.logo {
+  @apply mr-auto h-6 lg:mx-auto lg:h-8
+}
+
 /* .title {
   @apply text-2xl
 } */

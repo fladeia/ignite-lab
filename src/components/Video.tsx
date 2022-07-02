@@ -34,13 +34,13 @@ export const Video = (props: VideoProps) => {
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+      <div className="p-6 max-w-[1100px] mx-auto lg:p-8">
+        <div className="flex flex-col lg:flex-row items-start gap-16">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-lg lg:text-2xl font-bold">
               {data.lesson.title}
             </h1>
-            <p className="mt-4 text-gray-200 leading-relaxed">
+            <p className="text-sm lg:text-base mt-4 text-gray-200 leading-relaxed">
               {data.lesson.description}
             </p>
             {data.lesson.teacher && (
@@ -52,7 +52,7 @@ export const Video = (props: VideoProps) => {
                 />
 
                 <div className="leading-relaxed">
-                  <strong className="font-bold text-2xl block">
+                  <strong className="text-lg font-bold lg:text-2xl block">
                     {data.lesson.teacher.name}
                   </strong>
                   <span className="text-gray-200 text-sm block">
@@ -63,7 +63,7 @@ export const Video = (props: VideoProps) => {
             )}
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4 lg:w-auto">
             <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
               <DiscordLogo size={24} />
               Comunidade do Discord
@@ -75,37 +75,37 @@ export const Video = (props: VideoProps) => {
           </div>
         </div>
 
-        <div className="gap-8 mt-20 grid grid-cols-2">
-          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+        <div className="gap-8 mt-20 grid grig-rows-2 lg:grid-cols-2">
+          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-4 lg:gap-6 hover:bg-gray-600 transition-colors">
+            <div className="bg-green-700 h-full p-4 lg:p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">
+            <div className="py-4 lg:py-6 leading-relaxed">
+              <strong className="text-lg lg:text-2xl">
                 Material complementar
               </strong>
-              <p className="text-sm text-gray-200 mt-2">
+              <p className="text-xs lg:text-sm text-gray-200 mt-2">
                 Acesse o material complementar para acelerar o seu desenvolvimento
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-4 lg:p-6 flex items-center">
               <CaretRight size={24} />
             </div>
           </a>
 
-          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+          <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-4 lg:gap-6 hover:bg-gray-600 transition-colors">
+            <div className="bg-green-700 h-full p-4 lg:p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
-            <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">
+            <div className="py-4 lg:py-6 leading-relaxed">
+              <strong className="text-lg lg:text-2xl">
                 Wallpapers exclusivos
               </strong>
-              <p className="text-sm text-gray-200 mt-2">
+              <p className="text-xs lg:text-sm text-gray-200 mt-2">
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-4 lg:p-6 flex items-center">
               <CaretRight size={24} />
             </div>
           </a>
@@ -114,7 +114,3 @@ export const Video = (props: VideoProps) => {
     </div>
   )
 }
-
-// TODO
-// Botão padrão
-// responsivo
