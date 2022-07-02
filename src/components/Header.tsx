@@ -1,5 +1,5 @@
 import { Logo } from "./Logo"
-import { List } from 'phosphor-react'
+import { List, X } from 'phosphor-react'
 
 interface HeaderProps {
   showSidebar: string;
@@ -20,7 +20,11 @@ export const Header = (props: HeaderProps) => {
       <Logo />
       <div className="flex items-center gap-2 lg:hidden">
         <span className="text-sm">Aulas</span>
-        <List size={32} color="#81d8f7" className="hamburger" onClick={handleClick} />
+        {props.showSidebar ? (
+          <List size={32} color="#81d8f7" className="hamburger" onClick={handleClick} />
+        ) : (
+          <X size={32} color="#81d8f7" className="hamburger" onClick={handleClick} />
+        )}
       </div>
     </header>
   )
