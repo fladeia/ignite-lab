@@ -21,11 +21,7 @@ export const Lessons = (props: LessonProps) => {
   })
 
   const handleClick = () => {
-    if (props.showSidebar === 'hidden') {
-      props.setShowSidebar('')
-    } else {
-      props.setShowSidebar('hidden')
-    }
+    props.setShowSidebar('hidden')
   }
 
   const isActiveLesson = slug === props.slug
